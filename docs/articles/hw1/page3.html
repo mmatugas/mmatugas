@@ -1,0 +1,45 @@
+<!-- This is the view for page 3-->
+<html>
+	<head>
+		<title> Weathering With You </title>
+		<link rel="icon" href="assets/icon.png"/>
+		<style>
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+		<script>
+			function inputController(){
+				if (answer.value == 'Sunshine Girl'){
+					parent.location='page4.html';
+				}
+				else{
+					parent.location='end.html';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="text-align:center"> The Visit </h1>
+		<img src= 'assets/page_3a.gif' width="440" height="258" style="vertical-align:middle;margin:0px 0px 0px 170px">
+		<img src= 'assets/page_3b.gif' width="440" height="258" style="vertical-align:middle;margin:0px 50px 0px 0px">
+		<pre>
+
+
+					Hodaka finds out that Hina lives alone with her brother Nagi, and they have 
+					no adult guardian. Seeing how they are in a financial trouble, Hodaka proposes Hina to be a 
+					<select id="answer">
+						<option selected> Choose </option>
+						<option> Weather Forecaster </option>
+						<option> Sunshine Girl </option>
+					</select>  a job to clear the weather for events such as weddings and parties.
+
+		</pre>
+		<div class ='center'>
+			<input type='button' onClick="inputController()" value='Submit'>
+		</div>
+	</body>
+	
+</html>

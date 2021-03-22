@@ -1,0 +1,250 @@
+/* HW2 stylesheets */
+
+
+
+.main-menu-bg{
+  background-image: url("../assets/main_menu1.gif"); /*elipsis is a must */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.heading-center {
+  display: flex;
+  justify-content:center;
+	text-align: center;
+}
+
+.top-center{
+ 	display: grid;
+  	margin-left: auto;
+  	margin-right: auto;	
+}
+
+.center-left-picture {
+	verical-align: middle;
+	margin: 0px 0px 0px 170px;
+  width: 36.40%
+}
+
+.center-right-picture{
+	verical-align: middle;
+	margin: 0px 50px 0px 0px;
+  width: 36.40%;
+}
+
+.page-five{
+	text-align:left;
+	font-family:courier;
+	font-size: 16;
+}
+
+.page-six{
+	font-family:courier;
+	font-size:13;
+}
+
+.page-fourA{
+    position: absolute;
+    top: 86%;
+    left: 32.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.page-fourB{
+    display: block;
+    justify-content: space-around;
+    padding-left: 180;
+
+    
+}
+
+.bg-image-page-six{
+	background-image: url("../assets/page_6clouds.png"); /*elipsis is a must */
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+
+}
+
+/* Orginal Ending */
+/*and end.html */
+.og-ending-bg-color{
+	background-color: black;
+}
+
+.og-centered {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+    display:flex;
+}
+.og-centered2 {
+  	position: absolute;
+  	top: 70%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+    justify-content: center;
+    display:flex;
+}
+
+.og-centered3{
+	position: absolute;
+  	top: 80%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.og-centered4{
+	position: absolute;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	ext-align: center;
+}
+
+.og-centered5{
+	position: absolute;
+	top: 75%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.og-centered6{
+	position: absolute;
+  	top: 87%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+/* alternate ending */
+.peach-color{
+	background-color: #FFDAB9;
+}
+
+.alt-centered1{
+	position: absolute;
+  	top: 10%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.alt-centered2{
+	position: absolute;
+  	top: 80%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.alt-setting{
+	font-family:courier;
+	font-size:12;
+	color:black;
+  display: flex;
+  justify-content: center;
+}
+.alt-image-1{
+	vertical-align:middle;
+	margin: 90px 0px 0px 170px;
+}
+
+.alt-image-2{
+	vertical-align:middle;
+	margin:90px 50px 0px;
+	padding: 20px
+}
+
+.ending{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-one{
+  font-family:courier;
+  font-size:13;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  padding: 1.0em;
+  position: relative;
+
+}
+
+
+.page-three{
+  font-family:courier;
+  font-size:13;
+  display: block;
+  padding: 1.0em;
+  text-align: center;
+  justify-content: center;
+}
+
+.page-trial{
+  display: flex;
+  justify-content: center;
+
+}
+
+.page-fiveB{
+  float: right;
+  justify-content:flex-end;
+  display: flex;
+}
+
+.page-fiveC{
+  display: flex;
+  justify-content:flex-start;
+  position: fixed;
+
+}
+.page-fiveD{
+  float: left;
+  justify-content:flex-start;
+  
+  padding-right: 14;
+  padding-left: 20;
+  padding-bottom: 100
+}
+
+.page-fiveE{
+  padding-right: 50;
+  padding-left: 20;
+  padding-bottom: 100
+}
+
+.page-submit{
+
+  top:500;
+}
+
+.Mont-font{
+  font-family: 'Montserrat';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

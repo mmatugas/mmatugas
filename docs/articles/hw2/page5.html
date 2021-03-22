@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> Weathering With You </title>
+		<link rel="icon" href="assets/icon.png"/>
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+		<script>
+			function inputController(){
+				if (option3.checked){
+					parent.location='page6.html';
+				}
+				else{
+					parent.location='end.html';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class="center"> The Chase </h1>
+		<p class="page-five" style="padding: 20px" >
+			A detective with the police search for Hodaka, <br>as his family filed a missing person report. <br>They find out that Hodaka was caught using <br>the gun on a security camera. Officers arrive <br>at the apartment where Hina lives with Nagi and <br>interrogate her while Hodaka hides; <br>Hina realizes that because they have no legal guardians, <br>with their mother having died recently, social services <br>are going to take them into custody and separate them. 
+			<br>
+			<div>
+				<img src="assets/page_5b.gif" width=500 height=304 style="position: relative; left:20px"/>
+			</div>
+			
+		</p>
+		<p class="page-five"style="position: fixed; left: 50%; top: 50%" >
+			They take shelter in a hotel, and spend the night with instant food and doing karaoke.<br> As midnight passes, Hina reveals that her body is slowly turning into water the more she uses her power.<br> She explains that she is the cause of the abnormal weather and is intended to be a human sacrifice, <br>and her disappearance will return the weather to normal. Hodaka promises to ____ ,<input type="radio" id='option1' name='input-name' value='run-away'> <label>run away </label>
+			 <input type="radio" id='option2' name='input-name' value='watch-movie'> <label>watch movie </label>
+			 <input type="radio" id='option3' name='input-name' value='protect'> <label>protect her</label><br>  but the next morning, Hina has vanished into the sky and the rain has stopped.
+
+		</p>
+		
+		<div >
+			<img src="assets/page_5a.gif" width = 450 height=250 style="position: absolute; top: 80px; right:120px;"/>
+			<input type='button' onClick="inputController()" value='Submit' style="position:fixed; right:280">
+		</div>
+	</body>
+</html>

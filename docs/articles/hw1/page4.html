@@ -1,0 +1,53 @@
+<!-- This is the view for page 2-->
+<html>
+	<head>
+		<title> Weathering With You </title>
+		<link rel="icon" href="assets/icon.png"/>
+		<style>
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.ribbon {
+   				position: relative;
+   				top: -16px;
+   				right: -706px;
+			}
+
+		</style>
+		<script>
+			function inputController(){
+				if(option1.checked && option2.checked && option4.checked){
+					parent.location='page5.html';
+				}
+				else{
+					parent.location='end.html';
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<h1 style="text-align:center"> &#9728; How to be a Sunshine Girl? &#9730;</h1>
+
+		<img src= 'assets/page_4ad.png' width="440" height="258" style="vertical-align:middle;margin:0px 0px 0px 170px">
+		<img src= 'assets/page_4a.gif' width="440" height="258" style="vertical-align:middle;margin:0px 50px 0px 0px">
+		<pre>
+					Hodaka proposes to start a business with Hina with the ability of sunshine girl.
+					They create a website to accept orders and their business quickly becomes a success.
+
+					To be a Sunshine Girl/Guy you will need few things. Complete the list below:  
+		</pre>
+		<pre class="center">
+			<img src='assets/page_4adv.jpg' height='240' width='200'/>
+				<ul> 
+					<li> Super good manager </li><li> A very good advertisment </li> <input type="checkbox" id='option1' name='input-name' value='option1'> <label>Umbrella</label><input type="checkbox" id='option2' name='input-name' value='option2'> <label>Nagi Suit</label><input type="checkbox" id='option3' name='input-name' value='option3'> <label>Book</label><input type="checkbox" id='option4' name='input-name' value='option4'> <label>Rain Coat</label>		
+				</ul>
+		</pre>
+		<pre class ='center'>
+			<input type='button' onClick="inputController()" value='Submit'>
+		</pre>
+	</body>
+	
+</html>

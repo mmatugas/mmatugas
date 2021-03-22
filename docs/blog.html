@@ -1,0 +1,104 @@
+<head>
+	<link rel = "icon" href="assets/favicon.png">
+	<title> Esmeralda </title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css"> 
+	<link rel="stylesheet" href="styles/bootstrap-icons.css">
+
+
+	<!-- My Own CSS -->
+	<link rel="stylesheet" href="styles/styles.css">
+
+
+	<!--Customize Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!--Background Image -->
+	<img class="position-absolute w-100 h-100 " src='assets/blog_background.jpg' width='1500' height='1000'> 
+
+	<div class="position-relative text-muted container vh-100 d-flex flex-column ">
+
+	<!--Navigation Bar -->
+
+		<div id="mySidenav" class="sidenav font-raleway"> 
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="text-align:center">
+					<img src="assets/favicon.png" class="img-thumbnail rounded-circle" alt="Logo" 	style="width:90px";>
+				</a>
+				<a href="main_menu.html"> Main Menu </a>
+				<a href="blog.html">Blog </a>
+				<a href="projects.html"> Projects </a>
+				<a href="about.html"> About </a>
+				<a href="contact.html"> Contact </a>
+		</div>
+		<span style="font-size: 30px; cursor:pointer; text-align:right" class="font-raleway" onclick="openNav()">&#9776; Menu </span>
+			<script>
+				function openNav(){
+					document.getElementById("mySidenav").style.width = "250px";
+				}
+				function closeNav(){
+					document.getElementById("mySidenav").style.width = "0";
+				}
+			</script>
+
+
+		<!--Blog Header-->
+		<h1 class="font-raleway"> 
+			<i class="bi bi-chat-dots"></i> Blog 
+		</h1>
+		<hr>
+	
+		<div id="blog-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+			<!-- Carousel Menu -->
+			<ol class="carousel-indicators">
+				<li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
+				<li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner text-center">
+
+				<!-- Slide 1 -->
+				<div id="slide-1" class="carousel-item active">
+					<img class="img-fluid" src="assets/page_1.gif" width="650" height="650">
+					<div class="carousel-caption">
+						<h5 class="text-light font-raleway"> Weathering With You </h5>
+						<p class="font-robo"> Homework 1 </p>
+						<button type="button" class="btn btn-primary" onclick="document.location="> Read More </button>
+					</div>
+				</div>
+
+				<!-- Slide 2 -->
+
+				<div id="slide-2" class="carousel-item">
+					<img class="img-fluid" src="assets/blog_1.gif" width="650" height="650">
+					<div class="carousel-caption">
+						<h5 class="text-light font-raleway"> Weathering With You 2.0 </h5>
+						<p class="font-robo"> Homework 2 </p>
+						<button type="button" class="btn btn-primary" onclick="document.location="> Read More </button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Carousel Control -->
+	<!--		<a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
+				<i class="carousel-control-prev-icon"></i>
+			</a>
+			<a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="next">
+				<i class="carousel-control-next-icon"></i> 
+			</a> -->
+		</div>
+
+	</div>
+
+	<script src="scripts/bootstrap.bundle.min.js"></script>
+</body>

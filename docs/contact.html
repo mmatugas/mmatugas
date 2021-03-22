@@ -1,0 +1,87 @@
+<head>
+	<link rel = "icon" href="assets/favicon.png">
+	<title> Esmeralda </title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css"> 
+	<link rel="stylesheet" href="styles/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+
+	<!-- My Own CSS -->
+	<link rel="stylesheet" href="styles/styles.css">
+
+
+	<!--Customize Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!--Background Image -->
+	<img class="position-absolute w-100 h-100" src='assets/contacts.jpg'> 
+
+	<!--Contact Form-->
+
+	<div class="position-relative text-muted container vh-100 d-flex flex-column" align="center">
+
+	<!--Navigation Bar -->
+
+		<div id="mySidenav" class="sidenav font-raleway"> 
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<img src="assets/favicon.png" class="img-thumbnail rounded-circle" alt="Logo" style="width:90px;">
+				<a style="text-align:left"; href="main_menu.html"> Main Menu </a>
+				<a style="text-align:left" href="blog.html">Blog </a>
+				<a style="text-align:left" href="projects.html"> Projects </a>
+				<a style="text-align:left" href="about.html"> About </a>
+				<a style="text-align:left" href="contact.html"> Contact </a>
+		</div>
+		<span style="font-size: 30px; cursor:pointer; text-align:right" onclick="openNav()">&#9776; Menu </span>
+			<script>
+				function openNav(){
+					document.getElementById("mySidenav").style.width = "250px";
+				}
+				function closeNav(){
+					document.getElementById("mySidenav").style.width = "0";
+				}
+			</script>
+
+
+
+		<div class="container mt-4">
+			<h1 class="display-5 font-raleway">
+				<i class="bi bi-envelope"></i> Contact
+			</h1>
+			
+			<form>
+				<div class="col-md-3 font-robo" align="left">
+    				<label class="form-label">Name:</label>
+    				<input type="name" id="name" class="form-control ">
+  				</div>
+				<div class="col-md-3 font-robo" align="left">
+    				<label class="form-label">Email:</label><input type="email" class="form-control" id="email">
+  				</div>
+  				<div class="col-md-3"  align="left">
+    				<label class="form-label font-robo">Subject: </label>
+    				<input type="subject" class="form-control" id="subject">
+  				</div>
+  				<div class="col-md-3 font-robo"  align="left" style="padding-bottom: 10px">
+    				<label class="form-label">Message: </label>
+    				<textarea type="message" class="form-control" id="message" rows="4"></textarea>
+  				</div>
+  				<button class='btn btn-primary float-middle'type="submit"> Submit </button>
+		</form>
+	</div>
+
+
+
+
+
+	<script src="scripts/bootstrap.bundle.min.js"></script>
+</body>

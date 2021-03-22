@@ -1,0 +1,52 @@
+<!-- This is the view for page 2-->
+<html>
+	<head>
+		<title> Weathering With You </title>
+		<link rel="icon" href="assets/icon.png"/>
+		<link href='styles/styles.css' rel="stylesheet">
+		<script>
+			function inputController(){
+				if(option2.checked || option3.checked){
+					parent.location='end.html';
+				}
+				else if (option1.checked && option4.checked && option5.checked){
+					parent.location='page5.html';
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<h1 class="center"> &#9728; How to be a Sunshine Girl? &#9730;</h1>
+		<div class="page-trial">
+			<img src= 'assets/page_4ad.png' width="440" height="258">
+			<img src= 'assets/page_4a.gif' width="440" height="258" style="padding-left:5;">
+		</div>
+		<p class = "page-one">
+					Hodaka proposes to start a business with Hina with the ability of sunshine girl.<br>
+					They create a website to accept orders and their business quickly becomes a success.<br>
+					<br>
+
+					To be a Sunshine Girl/Guy you will need these three items. Check the items below:  
+		</p>
+		<pre class="center">
+			<input type="checkbox"id='option1' name='input-name' value='option1'> 
+			<img src='assets/page_4b.png' height='150' width='100' title="Umbrella" style="padding-right: 6.5px"/>
+			<input type="checkbox"id='option2' name='input-name' value='option2'>
+			<img src='assets/page_4c.png' height='150' width='100' title="iPad" style="padding-right: 6.5px;"/>
+			<input type="checkbox"id='option3' name='input-name' value='option3'>
+			<img src='assets/page_4d.png' height='150' width='100' title="Chips" style="padding-right: 6.5px"/>
+			<input type="checkbox"id='option4' name='input-name' value='option4'>
+			<img src='assets/page_4e.png' height='150' width='100' title="Nagi Suit" style="padding-right: 6.5px"/>
+			<input type="checkbox"id='option5' name='input-name' value='option5'>
+			<img src='assets/page_4f.png' height='150' width='100' title="Ponchos" style="padding-right: 6.5px"/>
+				
+		</pre>
+
+
+		<pre class ='center'>
+			<input type='button' onClick="inputController()" value='Submit'>
+		</pre>
+	</body>
+	
+</html>
