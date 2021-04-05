@@ -38,4 +38,4 @@ const sendRequest = async function(verb, url){
 	return response;
 }
 
-const responseEvent = response => alert('Your response has been sent');
+const responseEvent = response => alert('Your message has been sent.');
