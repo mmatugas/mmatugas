@@ -59,13 +59,14 @@
 				<i class="bi bi-envelope"></i> Contact
 			</h1>
 			
-			<form>
+			<div id='contact-form'>
 				<div class="col-md-3 font-robo" align="left">
     				<label class="form-label">Name:</label>
     				<input type="name" id="name" class="form-control ">
   				</div>
 				<div class="col-md-3 font-robo" align="left">
-    				<label class="form-label">Email:</label><input type="email" class="form-control" id="email">
+    				<label class="form-label">Email:</label>
+    				<input type="email" class="form-control" id="email">
   				</div>
   				<div class="col-md-3"  align="left">
     				<label class="form-label font-robo">Subject: </label>
@@ -75,13 +76,14 @@
     				<label class="form-label">Message: </label>
     				<textarea type="message" class="form-control" id="message" rows="4"></textarea>
   				</div>
-  				<button class='btn btn-primary float-middle'type="submit"> Submit </button>
-		</form>
+  				<button class='btn btn-primary float-middle'type="submit" id="submit"> Submit </button>
+		</div>
 	</div>
 
 
 
 
-
-	<script src="scripts/bootstrap.bundle.min.js"></script>
+	<script src='scripts/form-model.js'></script>
+	<script src='scripts/form-controller.js'></script>
+	<script src='scripts/bootstrap.bundle.min.js'></script>
 </body>
