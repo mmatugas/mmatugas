@@ -1,0 +1,169 @@
+<head>
+	<link rel = "icon" href="assets/favicon.png">
+	<title> Esmeralda </title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css"> 
+	<link rel="stylesheet" href="styles/bootstrap-icons.css">
+
+
+	<!-- My Own CSS -->
+	<link rel="stylesheet" href="styles/styles.css">
+
+
+	<!--Customize Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!--Navigation Bar -->
+	<div class="upper-right" >
+
+	<div id="mySidenav" class="sidenav font-raleway"> 
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a style="text-align:center">
+				<img src="assets/favicon.png" class="img-thumbnail rounded-circle" alt="Logo" style="width:90px";>
+			</a>
+				<a style="text-align:left"; href="index.html"> Main Menu </a>
+				<a style="text-align:left" href="blog.html">Blog </a>
+				<a style="text-align:left" href="projects.html"> Projects </a>
+				<a style="text-align:left" href="about.html"> About </a>
+				<a style="text-align:left" href="contact.html"> Contact </a>
+		</div>
+		<span style="font-size: 30px; cursor:pointer; text-align: right; padding-right: 80; padding-top: 20" class="text-muted font-raleway" onclick="openNav()">&#9776; Menu </span>
+			<script>
+				function openNav(){
+					document.getElementById("mySidenav").style.width = "250px";
+				}
+				function closeNav(){
+					document.getElementById("mySidenav").style.width = "0";
+				}
+			</script>
+		</div>
+	</div>
+
+	<div class="container mt-4 text-secondary">
+		<h1 class="display-5 font-raleway">
+				<i class="bi bi-chat-dots"></i> Blog
+		</h1>
+	<hr>
+	<h2 class="d-flex justify-content-center font-raleway text-secondary"> Trivia Quiz </h2>
+	<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	<br>
+		<img class="img-fluid" src="assets/quiz1.png" width="400" height="650" style="padding-top: 30px">
+	</div>
+		<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	<br>
+	<br>
+		Hello, readers! For this project, I did a Quiz Trivia App built with REST API. To be honest, this is the hardest project for me so far. I thought a lot of application I could do however everything I have thought were all beyond of what I can do. So I decided to stick with the class lab as a reference. As always, I tried to understand it as much as I could and kind of change it a little bit. 
+	<br>
+	<br>
+
+	</div>
+	<h3 class="d-flex justify-content-center font-raleway text-secondary"> Functionality </h3>
+	<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	<br>
+		<img class="img-fluid" style="padding: 0.5rem" src="assets/quiz2.png" width="400" height="650">
+		<img class="img-fluid" style="padding: 0.5rem" src="assets/quiz3.png" width="400" height="650">
+		<img class="img-fluid" style="padding: 0.5rem" src="assets/quiz6.png" width="400" height="650">
+
+	</div>
+	<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	<ol>
+		<br>
+		<br>
+		<li> Play
+			<ul>
+				<li> Play button lets the player start the game.</li>
+			</ul>
+		</li>
+		<li> Questions 
+			<ul>
+				<li> Click the correct answer (text) and if it is correct<br> page will load to the next question. </li>
+				<li> Topics are randomized, from entertainment to science and many more. </li>
+			</ul>
+		</li>
+		<li> Points
+			<ul>
+				<li> Points will be added based of the time the player answered the question.  </li>
+			</ul>
+		</li>
+		<li> Time 
+			<ul>
+				<li> 10 seconds will be added when questions are answered correctly. </li>
+				<li> Once the time reach 0 second that means the game is over </li>
+			</ul>
+		</li>
+		<li> Skip 
+			<ul>
+				<li> Skip button lets the player skip a question </li>
+			</ul>
+		</li>
+		<li> End
+			<ul>
+				<li> Highscores are shown at the start menu </li>
+				<li> Top 5 score will only be kept.  </li>
+				<li> Lets the player submit its name when the player scored<br> higher than the top 5.  </li>
+			</ul>
+		</li>
+
+		
+		<br>
+		<br>
+	</ol>
+
+
+	</div>
+	<h3 class="d-flex justify-content-center font-raleway text-secondary"> Future Improvement: </h3>
+	<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	</div>
+	<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	
+		<ol>
+			<li> I would like to add a difficulty level and topic choices for the player<br> so the game has more options in to it. </li>
+			
+		</ol>
+	</div>
+	<br>
+	<br>
+	<h3 class="d-flex justify-content-center font-raleway text-secondary"> References:</h3>
+	<div class="container text-secondary font-raleway
+	d-flex justify-content-center">
+	<ul>
+		<li>
+			<a href="https://youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx"> Quiz App </a>
+		</li>
+		<li> Lab 6 - Ted Holmberg </li>
+	</ul>
+	<pre>
+
+
+
+	</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
